@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.container {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+#header {
+	background: #19202d;
+}
+
+#header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.headerContent {
+	position: relative;
+}
+
+.headerLogo {
+	float: left;
+	margin: 0;
+	padding-top: 10px;
+}
+
+#headerNav {
+	float: right;
+}
+
+#headerNav > ul {
+	float: left;
+}
+
+#headerNav > ul > li {
+	float: left;
+}
+
+#headerNav > ul > li > a {
+	display: block;
+	position: relative;
+	padding: 20px 20px 20px 10px;
+	color: #81858b;
+	font-weight: bold;
+}
+
+#headerNav > ul > li > a:hover {
+	background: #e1e1e1;
+	color: #fff;
+}
+
+#headerNav > ul > li > a:after {
+	content: '\f107';
+	position: absolute;
+	top: 22px;
+	right: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	font-size: 15px;
+	font-family: 'Font Awesome 5 Free';
+}
+
+#headerNav > ul > li:nth-child(1) > a:after {
+	display: none;
+}
+
+#headerNav > ul > li:nth-child(1) > a:hover {
+	background: none;
+}
+
+#headerNav > ul > li:nth-child(1) {
+	margin-right: 10px;
+}
+
+#headerNav > ul > li:nth-child(1) > a {
+	padding: 0;
+	height: 57px;
+	line-height: 57px;
+}
+
+.dropdown {
+	float: left;
+	width: 100%;
+	height: 280px;
+	background: #e1e1e1;
+	position: absolute;
+	top: 57px;
+	left: 0;
+	display: block;
+
+}
+
+#headerNav > ul > li:hover > .dropdown {
+	display: block;
+}
+
+#headerNav > ul > li:hover > a {
+	background: #e1e1e1;
+}
+
+.dropdown > li {
+	width: 1300px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.dropdownMenuLeft {
+	float: left;
+	width: 17%;
+	height: 100%;
+	background: #cccccc;
+}
+
+.dropdownMenuLeft > li {
+	float: left;
+	width: 100%;
+}
+
+.dropdownMenuLeft > li > a {
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 10px 25px;
+	color: #19202d;
+	text-align: right;
+	font-size: 18px;
+	font-weight: 700;
+	box-sizing: border-box;
+}
+
+.dropdownMenuLeft > li > a:after {
+	content: '\f105';
+	font-family: 'Font Awesome 5 Free';
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	display: none;
+}
+
+.first {
+	position: relative !important;
+	display: inline-block;
+	background: #e1e1e1;
+}
+
+.first:after {
+	content: '\f105';
+	font-family: 'Font Awesome 5 Free';
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	display: block !important;
+}
+
+#headerNav > ul > li:hover > .dropdown > li > .dropdownMenuLeft > li > .dropdownContent {
+	display: block;
+}
+
+#headerNav > ul > li > .dropdown > li > .dropdownMenuLeft > li:hover > a {
+	background: #e1e1e1;
+}
+
+#headerNav > ul > li > .dropdown > li > .dropdownMenuLeft > li:hover > a:after {
+	display: block;
+}
+
+
+.dropdownContent {
+	position: absolute;
+    display: block;
+    width: 83%;
+    height: 100%;
+    top: 0;
+    left: 17%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.dropdownMenuLeft > li:hover > .dropdownContent {
+	display: block;
+}
+
+.dropdownContent > li {
+	float: left;
+	position: relative;
+	width: 18%;
+	height: 230px;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+
+.dropdownContent li:last-of-type {
+	margin-right: 0;
+}
+
+.dropdownContent > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.dropdownContent > li:hover > a > span {
+	text-decoration: underline;
+}
+
+.dropdownContent .shadow {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 15px 15px 15px;
+	z-index: 99;
+}
+
+.dropdownContent > li > a:after {
+	content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 100%);
+}
