@@ -528,7 +528,142 @@ a {
 
 .prevArrow i,
 .nextArrow i {
-	color: #ccc;
+	color: #fff;
+}
+
+.fresh {
+	float: left;
+	width: 100%;
+}
+
+.fresh:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.sectionHeading {
+	float: left;
+	width: 100%;
+	position: relative;
+	margin: 20px 0 15px 0;
+	color: #1a1a1a;
+	font-size: 24px;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.sectionHeading:after {
+	content: "";
+	height: 4px;
+	width: 50px;
+	display: block;
+	background: #084885;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+}
+
+.boxFivePosts .big {
+	float: left;
+	width: 68%;
+	margin-right: 1%;
+	position: relative;
+}
+
+.big .img {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.big .img:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 260px;
+	background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,0.9)));
+	background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 100%);
+	background: -o-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 100%);
+	background: -ms-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 100%);
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.9) 100%);
+}
+
+.desc {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	color: #fff;
+	padding-bottom: 12px;
+	line-height: 120%;
+	white-space: normal;
+}
+
+.desc .title {
+	float: left;
+	width: 100%;
+	line-height: 120%;
+	font-size: 18px;
+	margin: 0;
+}
+
+.desc .title a {
+	display: inline-block;
+	padding: 0 10px 5px 10px;
+	color: #fff;
+}
+
+.desc .title a:hover {
+	text-decoration: underline;
+}
+
+.desc .text {
+	float: left;
+	width: 100%;
+	padding: 0 10px 0 10px;
+	line-height: 16px;
+	margin: 0;
+}
+
+.small {
+	float: right;
+	width: 31%;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.small:first-of-type {
+	padding-top: 0;
+}
+
+.boxFivePosts .small .img {
+	float: left;
+	width: 33%;
+	margin-right: 2%;
+}
+
+.boxFivePosts .small .smallHeading {
+	float: right;
+	width: 65%;
+	line-height: 120%;
+	margin-bottom: 5px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.boxFivePosts .small .smallHeading a {
+	font-size: 14px;
 }
 
 
