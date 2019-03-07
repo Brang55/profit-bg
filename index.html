@@ -11,6 +11,8 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
+	<div id="fb-root"></div>
+	<script async defer src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v3.2"></script>
 		<header id="header">
 			<div class="container">
 				<h1 class="headerLogo">
@@ -188,15 +190,40 @@
 		</header>
 		<div class="container">
 			<main id="main">
+				<div class="weekThemes">
+					<span>Темите тази седмица:</span>
+					<ul>
+						<li><a href="#">Тема 1</a></li>
+						<li><a href="#">Тема 2</a></li>
+						<li><a href="#">Тема 3</a></li>
+					</ul>
+				</div>
+				<div class="searchSocials">
+					<ul>
+						<li>
+							<a href="#" class="tw">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="fb">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="gp">
+								<i class="fab fa-google-plus-g"></i>
+							</a>
+						</li>
+					</ul>
+					<form action="" method="get" class="searchFormHeader">
+						<input type="text" placeholder="Търси..." class="search">
+						<button type="submit" class="searchSubmit">
+							<i class="fas fa-search"></i>
+						</button>
+					</form>
+				</div>
 				<div class="mainContent">
-					<div class="weekThemes">
-						<span>Темите тази седмица:</span>
-						<ul>
-							<li><a href="#">Тема 1</a></li>
-							<li><a href="#">Тема 2</a></li>
-							<li><a href="#">Тема 3</a></li>
-						</ul>
-					</div>
 					<section class="topSlider">
 						<div class="homeTopSlider">
 							<ul>
@@ -531,8 +558,90 @@
 						</div>
 					</section>
 				</div>
-				<aside style="float:right; width: 300px; background-color: orange; height: 300px; box-sizing: border-box; padding-left: 15px;">
-
+				<aside id="sidebar">
+					<h3 class="sectionHeading">Пазари</h3>
+					<ul class="sidebarMarkets">
+						<li class="current">
+							<a href="#">Индекси</a>
+						</li>
+						<li>
+							<a href="#">Валутни котировки</a>
+						</li>
+						<li>
+							<a href="#">Световни пазари</a>
+						</li>
+					</ul>
+					<div class="marketsHolder">
+						<ul>
+							<li>
+								<div>
+									<span class="name">
+										SOFIX
+									</span>
+									<span class="bid">
+										584.19
+									</span>
+									<span class="ask" style="color: #248F30;">
+										0.19%
+									</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span class="name">
+										BGREIT
+									</span>
+									<span class="bid">
+										124.27
+									</span>
+									<span class="ask" style="color: #248F30;">
+										0.15%
+									</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span class="name">
+										BGTR30
+									</span>
+									<span class="bid">
+										505.330
+									</span>
+									<span class="ask" style="color: #248F30;">
+										0.36%
+									</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span class="name">
+										BGBX40
+									</span>
+									<span class="bid">
+										116.330
+									</span>
+									<span class="ask" style="color: #248F30;">
+										0.02%
+									</span>
+								</div>
+							</li>
+						</ul>
+						<span>Ask</span>
+						<span>Bid</span>
+					</div>
+					<h3 class="sectionHeading">Видео</h3>
+					<iframe width="100%" height="200" src="https://www.youtube.com/embed/nPA2czkOsFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<h3 class="sectionHeading">На фокус</h3>
+					<div class="sidebarNews">
+						<a href="#" class="actualImgSlider" style="background-image: url('assets/data/euus.jpg');"></a>
+						<div class="desc">
+							<h2 class="title">
+								<a href="#">
+									САЩ възстановиха дипломатическия статут на Европейския съюз
+								</a>
+							</h2>
+						</div>
+					</div>
 				</aside>
 				<section class="fourArticlesRow">
 					<article class="articles">
