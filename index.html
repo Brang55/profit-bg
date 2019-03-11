@@ -3,6 +3,7 @@
 	<head>
 		<title>Profit BG - cool</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link href="/assets/fonts/fontawesome-free-5.7.1-web/css/all.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -12,7 +13,7 @@
 	</head>
 	<body>
 	<div id="fb-root"></div>
-	<script async defer src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v3.2"></script>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v3.2"></script>
 		<header id="header">
 			<div class="container">
 				<h1 class="headerLogo">
@@ -20,6 +21,9 @@
 						<img src="assets/images/logo.png">
 					</a>
 				</h1>
+				<a href="#" class="mobileBtnMenu">
+					<i class="fas fa-bars"></i>
+				</a>
 				<nav id="headerNav">
 					<ul>
 						<li>
@@ -631,6 +635,9 @@
 					</div>
 					<h3 class="sectionHeading">Видео</h3>
 					<iframe width="100%" height="200" src="https://www.youtube.com/embed/nPA2czkOsFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="fbPageSidebar">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofit.bg&tabs=timeline&width=285px&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="285px" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
 					<h3 class="sectionHeading">На фокус</h3>
 					<div class="sidebarNews">
 						<a href="#" class="actualImgSlider" style="background-image: url('assets/data/euus.jpg');"></a>
