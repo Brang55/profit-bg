@@ -28,7 +28,6 @@
   /*src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }*/
 
 
-
 body {
 	margin: 0;
 	padding: 0;
@@ -54,6 +53,7 @@ input[type="submit"] {
 .container {
 	width: 1300px;
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 #header {
@@ -733,6 +733,7 @@ input[type="submit"] {
 	padding: 0 10px 0 10px;
 	line-height: 16px;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 .boxFivePosts .small {
@@ -903,7 +904,7 @@ input[type="submit"] {
 }
 
 .newsletterBox form {
-	float: left;
+	float: right;
 	width: auto;
 }
 
@@ -943,6 +944,10 @@ input[type="submit"] {
 
 .submitBtn:hover {
 	background: rgba(8,72,133,0.8);
+}
+
+.inputBtnHolder {
+	float: left;
 }
 
 .inputText {
@@ -1353,6 +1358,7 @@ input[type="submit"] {
 @media only screen and (max-width: 1060px) {
 	.container {
 		width: 980px;
+		padding: 0 10px;
 	}
 
 	.mobileBtnMenu {
@@ -1360,19 +1366,301 @@ input[type="submit"] {
 	}
 
 	#headerNav {
-		display: block;
+		width: 100%;
+	}
+
+	#headerNav > ul {
+		width: 100%;
+		display: none;
 	}
 
 	#headerNav > ul > li:nth-child(1) {
 		display: none;
 	}
 
+	#headerNav > ul > li > a:after {
+		top: 5px;
+	}
+
+	.dropdown > li {
+		width: 100%;
+	}
+
+	#headerNav > ul > li {
+		width: 100%;
+		position: relative;
+	}
+
+	#headerNav > ul > li > a {
+		padding: 5px 0;
+	}
+
+	#headerNav > ul > li:hover > a {
+		background: #084885;
+	}
+
 	.dropdown {
-		display: block;
-		top: 130px;
+		display: none;
+		top: 25px;
+		height: auto;
+		background: #084885;
+	}
+
+	.dropdownMenuLeft {
+		width: 100%;
+		background: #084885;
+	}
+
+	.dropdownMenuLeft > li > a {
+		padding: 10px 0;
+		color: #fff;
+		font-size: 14px;
+		background: #084885;
+		text-align: left;
+		border-bottom: 1px solid #fff;
+		font-weight: 400;
+	}
+
+	#headerNav > ul > li > .dropdown > li > .dropdownMenuLeft > li:hover > a {
+		background: #084885;
+	}
+
+	#headerNav > ul > li:hover > .dropdown > li > .dropdownMenuLeft > li > .dropdownContent {
+		display: none;
+	}
+
+	.dropdownMenuLeft > li > a:after {
+		display: none !important;
+	}
+
+	.dropdownContent > li {
+		height: 200px;
+		width: 17.5%;
+		margin-top: 7px;
+	}
+
+	.dropdownContent > li > a {
+		font-size: 14px;
+	}
+
+	.dropdownContent {
+		display: none;
+	}
+
+	.mainContent {
+		width: 100%;
+		padding: 0;
+		border: none;
+	}
+
+	.topSlider ul li {
+		width: 100%;
+	}
+
+	.boxFivePosts .small .smallHeading {
+		width: 69%;
+		font-size: 18px;
+	}
+
+	#sidebar {
+		float: none;
+		margin: 0 auto;
+		clear: both;
+	}
+
+	.fourArticlesRow .articles {
+		width: 49%;
+	}
+
+	.fourArticlesRow .articles:nth-of-type(2n) {
+		margin-right: 0;
+	}
+
+	.footerBottom p {
+		float: left;
 	}
 }
 
+@media only screen and (max-width: 980px) {
+	.container {
+		width: 920px;
+	}
+
+	.desc .title {
+		font-size: 16px;
+	}
+
+	.desc .text {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.container {
+		width: 100%;
+	}
+
+	.boxFivePosts .small .smallHeading {
+		line-height: 100%;
+	}
+
+	#actual-slider li .actualImgSlider {
+		height: 290px;
+	}
+
+	.fourImageSilder {
+		max-height: inherit;
+	}
+
+	.boxFivePosts .small .img {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	.bigPost {
+		width: 100%;
+	}
+
+	.bigPost .img {
+		height: 260px;
+	}
+
+	.smallPost {
+		width: 50%;
+	}
+
+	.smallPost .imgSmall {
+		height: 170px;
+	}
+
+	.description h2 {
+		font-size: 17px;
+	}
+
+	.boxFivePosts .big {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.boxFivePosts .small {
+		width: 100%;
+	}
+
+	.boxFivePosts .small .smallHeading {
+		float: left;
+		padding-top: 15px;
+	}
+
+	.boxFivePosts .small .smallHeading a {
+		font-size: 17px;
+	}
+
+	.footerLogos li {
+		margin-right: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.boxFivePosts .small .img {
+		margin-right: 2%;
+	}
+
+	.weekThemes span {
+		font-size: ;
+	}
+
+	#actual-slider li {
+		display: none;
+		width: 100%;
+	}
+
+	#actual-slider li .actualImgSlider {
+		height: 300px;
+	}
+
+	#actual-slider li:first-of-type {
+		display: block;
+	}
+
+	.newsletterBox {
+		position: relative;
+	}
+
+	.newsletterBox span {
+		position: absolute;
+	}
+
+	.newsletterBox form {
+		width: 100%;
+	}
+
+	.checkboxHold {
+		float: right;
+		margin-bottom: 10px;
+	}
+
+	.inputBtnHolder {
+		width: 100%;
+	}
+
+	.inputText {
+		width: 85%;
+		box-sizing: border-box;
+	}
+
+	.submitBtn {
+		width: 15%;
+		box-sizing: border-box;
+	}
+
+	.search {
+		display: none;
+	}
+
+	.searchSocials ul {
+		display: none;
+	}
+
+	.weekThemes {
+		display: none;
+	}
+
+	#header {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.fourArticlesRow .articles {
+		width: 100%;
+		margin: 0;
+	}
+
+	.footerLogos li {
+		margin-right: 0;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	#sportalLogo {
+		float: none;
+		display: block;
+		width: 100%;
+		background-position: center -752px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+
+	.smallPost h2 a {
+		font-size: 14px;
+	}
+}
 
 
 

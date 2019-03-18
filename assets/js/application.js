@@ -1,11 +1,3 @@
-$("li").on("hover", function(){
-    $(this).removeClass("first");
-});
-
-
 $(document).ready(function(){
-
-  $("#headerNav").hide()
+    $('body').hide();
 });
-
-console.log($);
