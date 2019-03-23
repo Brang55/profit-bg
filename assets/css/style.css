@@ -1281,6 +1281,29 @@ input[type="submit"] {
 	color: #fff;
 }
 
+/*Category*/
+
+.breadCrumb {
+	float: left;
+	width: 100%;
+}
+
+.breadCrumb li {
+	float: left;
+	color: #81858b;
+}
+
+.breadCrumb li:first-of-type {
+	margin-right: 5px;
+}
+
+.breadCrumb li {
+	font-size: 14px;
+}
+
+
+
+
 /*Responsive*/
 
 @media only screen and (max-width: 1300px) {
