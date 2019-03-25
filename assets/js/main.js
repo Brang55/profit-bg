@@ -21,7 +21,11 @@ $(document).ready(function() {
 
     $('.homeTopSlider ul').bxSlider();
     $('.actual-slider').bxSlider({
+        slideWidth: 330,
+        slideMargin: 10,
         moveSlides: 1,
+        minSlides: 2,
+        maxSlides: 3
     });
 
 

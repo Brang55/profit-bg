@@ -800,11 +800,12 @@ input[type="submit"] {
 
 .actual-slider li {
 	float: left;
+	margin-right: 10px;
 }
 
 .actual-slider .sliderHolder {
 	float: left;
-	width: 32%;
+	width: 100%;
 	margin-right: 2%;
 	position: relative;
 }
@@ -1862,6 +1863,10 @@ input[type="submit"] {
 		clear: both;
 	}
 
+	.sidebarAdv {
+		margin-top: 10px;
+	}
+
 	.fourArticlesRow .articles {
 		width: 49%;
 	}
@@ -2123,6 +2128,14 @@ input[type="submit"] {
 	.singleSocials li {
 		margin-bottom: 5px;
 	}
+
+	.submitBtn {
+		width: 25%;
+	}
+
+	.inputText {
+		width: 75%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -2153,6 +2166,11 @@ input[type="submit"] {
 
 	.smallPost h2 a {
 		font-size: 14px;
+		line-height: 100%;
+	}
+
+	.boxFivePosts .small .smallHeading {
+		margin-top: 0;
 	}
 
 	.footerMenu li {
@@ -2170,6 +2188,18 @@ input[type="submit"] {
 @media only screen and (max-width: 450px) {
 	.breadCrumb li a {
 		font-size: 12px;
+	}
+
+	.submitBtn {
+		width: 35%;
+	}
+
+	.inputText {
+		width: 65%;
+	}
+
+	.newsletterBox span {
+		position: relative;
 	}
 }
 
