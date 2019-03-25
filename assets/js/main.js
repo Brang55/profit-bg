@@ -24,7 +24,14 @@ $(document).ready(function() {
         moveSlides: 1,
     });
 
+
     $('.dropdownMenuLeft li').hover(function() {
         $(this).children('.dropdownContent').slideToggle();
+    });
+
+    $( "#tabs" ).tabs();
+
+    $('.sidebarMarkets li').click(function () {
+        $(this).addClass('current').siblings('.current').removeClass('current');;
     });
 });
