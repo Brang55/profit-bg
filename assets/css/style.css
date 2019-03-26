@@ -1,3 +1,12 @@
+/**
+ * @Author: Ivan Iliev <Iliev>
+ * @Date:   25-03-2019 11:49:00
+ * @Filename: style.css
+ * @Last modified by:   Iliev
+ * @Last modified time: 25-03-2019 21:29:83
+ */
+
+
 /*@font-face {*/
   /*font-family: 'Font Awesome 5 Brands';*/
   /*font-style: normal;*/
@@ -118,11 +127,6 @@ input[type="submit"] {
 	font-weight: bold;
 }
 
-#headerNav > ul > li > a:hover {
-	background: #ececec;
-	color: #084885;
-}
-
 #headerNav > ul > li > a:after {
 	content: '\f107';
 	position: absolute;
@@ -173,7 +177,8 @@ input[type="submit"] {
 }
 
 #headerNav > ul > li:hover > a {
-	background: #ececec;;
+	background: #ececec;
+	color: #084885;
 }
 
 .dropdown > li {
@@ -238,6 +243,10 @@ input[type="submit"] {
 }
 
 #headerNav > ul > li > .dropdown > li > .dropdownMenuLeft > li:hover > a:after {
+	display: block;
+}
+
+#headerNav > ul > li > .dropdown > li > .dropdownMenuLeft > li:first-of-type > .dropdownContent {
 	display: block;
 }
 
@@ -967,7 +976,7 @@ input[type="submit"] {
 }
 
 .inputText {
-	padding: 12px 15px;
+	padding: 10px 15px;
 	width: 210px;
 	border: 1px solid #565656;
 	box-shadow: 0 0 1px #c8c8c8 inset;
@@ -1070,11 +1079,6 @@ input[type="submit"] {
 .marketsHolder ul li {
 	float: left;
 	width: 100%;
-}
-
-.marketsHolder ul li div {
-	float: left;
-	width: 100%;
 	font-size: 16px;
 	font-weight: 700;
 	padding: 6px 9px 6px 8px;
@@ -1083,7 +1087,7 @@ input[type="submit"] {
 	box-sizing: border-box;
 }
 
-.marketsHolder ul li div span {
+.marketsHolder ul li span {
 	display: inline-block;
 	float: left;
 	width: 33%;
@@ -1878,6 +1882,10 @@ input[type="submit"] {
 	.footerBottom p {
 		float: left;
 	}
+
+	#headerNav > ul > li > .dropdown > li > .dropdownMenuLeft > li:hover > a {
+		background: #084885;
+	}
 }
 
 @media only screen and (max-width: 980px) {
@@ -2202,35 +2210,3 @@ input[type="submit"] {
 		position: relative;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
